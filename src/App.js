@@ -1,6 +1,6 @@
 import './App.css';
 import React,{ useState, useEffect} from 'react';
-
+import UsersComp from './Components/Users';
 function App() {
 
   const urlUsers = 'https://jsonplaceholder.typicode.com/users'
@@ -27,14 +27,11 @@ function App() {
       <h1>Users</h1>
       <hr />
       <div>
-        {users.map((item,index) =>(
-          <>
-            <div >
-                    <p  key={index}>{item.name}</p>
-
-            </div>
-          </>
-        ))}
+        <UsersComp users={users} />
+      {/* {users.map((item) =>(
+            <UsersComp key={item.id} name={item.name} username={item.username} email={item.email} />
+            
+        ))} */}
       </div>
     </div>
   );

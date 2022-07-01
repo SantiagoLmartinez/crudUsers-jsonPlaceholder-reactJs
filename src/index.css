@@ -1,0 +1,24 @@
+.listHeader{
+  display: flex;
+  justify-content: space-around;
+  width: 700px;
+  text-align: center;
+  align-items: center;
+
+}
+
+.list {   
+  display: flex;
+  width: 700px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+
+}
+.list span, .listHeade>span{
+  text-align: center;
+  width: 100%;
+  
+}
